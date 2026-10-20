@@ -7,7 +7,11 @@ dist/
 build/
 .idea/
 .vscode/
-.wolfcode/
+# 运行时数据（会话、plan、worktree、真实配置）不提交，
+# 但配置模板与内置 skills 要跟着仓库走
+.wolfcode/*
+!.wolfcode/config.yaml.example
+!.wolfcode/skills/
 .claude/
 CLAUDE.md
 
